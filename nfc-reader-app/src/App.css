@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nfc-controls {
+  margin: 2rem 0;
+}
+
+.scan-button {
+  background-color: #61dafb;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scan-button:hover:not(:disabled) {
+  background-color: #21a0c4;
+}
+
+.scan-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 1rem 0;
+  max-width: 500px;
+}
+
+.nfc-data {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 1rem 0;
+  max-width: 600px;
+  text-align: left;
+}
+
+.data-field {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.records {
+  margin-top: 20px;
+}
+
+.record {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.record div {
+  margin: 5px 0;
+  font-size: 14px;
+}
